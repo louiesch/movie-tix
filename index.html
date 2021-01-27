@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Movie Tix</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Welcome to the Movie Palace</h1>
+    <form id="form1">
+      <div class="row">
+        <label for="films">Choose a movie:</label>
+        <select name="films" id="films">
+          <option value="empty" selected disabled>Movies</option>
+          <option value="Lord of the Rings">Lord of the Rings</option>
+          <option value="Mad Max">Mad Max</option>
+          <option value="Breakin' 2: Electric Boogaloo">Breakin' 2: Electric Boogaloo</option>
+        </select>
+      </div>
+      <div class="row">
+        <label for="times">Showtimes:</label>
+        <select name="times" id="times">
+          <option value="empty" selected disabled>Select one</option>
+          <option value="12:00 pm">12:00 pm</option>
+          <option value="Afternoon">4:00 pm</option>
+          <option value="9:00 pm">9:00 pm</option>
+        </select>
+      </div>
+      <div class="row">
+        <label for="age">How old are you?</label>
+        <select name="age" id="age">
+          <option value="empty" selected disabled>Select age</option>
+          <option value="0 - 12">0 - 12</option>
+          <option value="13 - 54">13 - 54</option>
+          <option value="55 - 100">55 - 100</option>
+        </select>
+      </div>
+      <button type="submit" id="submitBtn" class="btn btn-info">Go!</button>
+    </form>
+    <div id="output">
+      <p>Your ticket to see <span class="movie-name"></span> will cost $<span class="ticket-price"></span></p>
+    </div>
+  </div>
+</body>
+
+</html>
